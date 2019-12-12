@@ -1,0 +1,43 @@
+/* An amusement park company wants one application for there billing counter,for selling the tickets
+ * Now they approached Max for developing the application
+ * In the application the ticket prize should be Rs 400 per person and if a person buys more than 10 tickets then they are eligible
+ * for 10 percent discount,calculate the total bill or amount according to the number of tickets sold
+
+*/
+package co.edureka.ffcontent;
+
+import java.util.Scanner;
+
+public class Module01 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many tickets you want to buy for the theme park");
+		int count=sc.nextInt();
+		System.out.println("You will be eligible for the discount if you buy more than 10 tickets");
+	float amount=0;
+	
+		for(int i=0;i<count;i++){
+			
+			amount =count*400;
+			
+		}
+		System.out.println("Your current bill is Rs " +amount);
+	float discount=0;
+	if(count>10){
+		
+		discount=(10*amount)/100;
+		System.out.println("You have got a discount of Rs "+discount);
+		amount=amount-discount;
+		System.out.println("Your bill after discount is Rs " +amount);
+		
+	}
+	else
+		System.out.println("You have got a discount of Rs "+discount);
+		System.out.println("Your current bill is Rs " +amount);
+		 
+		
+
+	}
+
+}

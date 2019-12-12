@@ -1,0 +1,36 @@
+/*John and paul went to watch the movie in a theatre where they need to buy two tickets
+ * So there tickets are of two types one is Golden category and other one is silver category
+ * If they will buy tickets for silver categories then per person ticket will cost Rs 150 and
+ * and for golden category ticket will cost Rs 200 each
+ * 
+ *  Considering this scenario,write a program for theatre on ticket booking scenario
+ * 
+
+*/
+package co.edureka.ffcontent;
+
+import java.util.Scanner;
+
+public class Module1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Welcome to the movie world");
+		System.out.println("How many tickets you want to book");
+		int numberofpersons=scan.nextInt();
+		System.out.println("Which class you want to book type 1 for silver and type 2 for golden");
+		int type=scan.nextInt();
+		if(type==1)
+		{ System.out.println("You need to pay Rs 150 for this");
+			
+		}	
+		else if(type==2)	
+		{
+			System.out.println("You need to pay Rs 200 for this");
+		}
+		else
+			System.out.println("Please enter the right credentials"); 
+	}
+
+}
