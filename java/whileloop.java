@@ -6,7 +6,7 @@ public class whileloop {
 
 	public static void main(String[] args) {
 		
-//Write a program to print 10 even numbers and 10 odd numbers.
+//Write a program to print 10 even numbers and 10 odd numbers
 		int i;
 		Scanner scan=new Scanner(System.in);
 
